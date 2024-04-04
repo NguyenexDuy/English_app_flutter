@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app01/models/quote.dart';
 import 'package:flutter_app01/pages/lading_page.dart';
 
-void main() {
+void main() async {
+  await Quotes().getAll();
   runApp(const MyApp());
 }
 
